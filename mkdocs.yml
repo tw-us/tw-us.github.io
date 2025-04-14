@@ -1,0 +1,100 @@
+site_name: 台美緊急連線 TW-US Crisis Connect
+site_url: https://tw-us.cc
+theme:
+  name: material
+  logo: assets/logo.png
+  # NOTE: DO NOT set zh-TW language as it will break the search bar (stemming mismatched)
+  # language: zh-TW
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: light
+      primary: custom
+      accent: orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: "deep orange"
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  features:
+    - navigation.indexes # Use index.md as the entry point of a folder.
+    - toc.integrate # Integrate table of contents into nav.
+    - navigation.top # Provide a button to scroll to the top of the page.
+    - navigation.tabs # Place top level nav items in the tab bar.
+
+# NOTE: Commented out before the first version release
+# extra:
+#   version:
+#     provider: mike
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      # See https://github.com/squidfunk/mkdocs-material/discussions/5992 for quirks about search in Chinese .
+      # Magic separator regex. A must-need for zh to tokenize correctly.
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      # Prefer small dict. Big dict appears to tokenize too aggressively to be natural.
+      jieba_dict: jieba_dict/dict.txt.small
+      # jieba_dict: jieba_dict/dict.txt.big
+  - minify:
+      minify_html: true
+  - awesome-nav
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
