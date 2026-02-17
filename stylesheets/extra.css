@@ -1,10 +1,99 @@
-[data-md-color-scheme=light] {
-    --md-primary-fg-color: #186840;
-    --md-primary-bg-color: #fff6d1;
-    --md-typeset-a-color:  #088345;
+/* tw-us.cc 全民安全指引風格配色 */
+:root {
+  /* 全民安全指引配色系統 */
+  --mnd-primary: #EA5532;
+  --mnd-secondary: #FDEDE4;
+  --mnd-text: #231815;
+  --mnd-primary-light: #F26B47;
+  --mnd-primary-dark: #D63F1E;
+  --mnd-secondary-light: #FEF5F0;
+  --mnd-accent: #FF6B35;
 }
+
+/* 亮色主題 */
+[data-md-color-scheme=light] {
+    --md-primary-fg-color: #EA5532;
+    --md-primary-bg-color: #FDEDE4;
+    --md-typeset-color: #231815;
+    --md-typeset-a-color: #D63F1E;
+    --md-primary-fg-color--light: #F26B47;
+    --md-primary-fg-color--dark: #D63F1E;
+    --md-accent-fg-color: #FF6B35;
+    --md-accent-bg-color: #FEF5F0;
+    --md-default-fg-color--lightest: #FDEDE4;
+    --md-default-fg-color--lighter: #F5D5C8;
+}
+
+/* 深色主題 */
 [data-md-color-scheme=slate] {
-    --md-primary-fg-color: #155a36;
-    --md-primary-bg-color: #e9e1bf;
-    --md-typeset-a-color:  #1c9659;
+    --md-primary-fg-color: #F26B47;
+    --md-primary-bg-color: #2A1F1A;
+    --md-typeset-color: #E5D5C8;
+    --md-typeset-a-color: #FF7A50;
+    --md-default-bg-color: #1A1512;
+    --md-code-bg-color: #2A1F1A;
+    --md-accent-fg-color: #FF8C69;
+    --md-accent-bg-color: #2A1F1A;
+}
+
+/* 特殊元素樣式 */
+.md-typeset .admonition.warning {
+    border-left-color: #EA5532;
+}
+
+.md-typeset .admonition.info {
+    border-left-color: #FF6B35;
+}
+
+.md-typeset .admonition.tip {
+    border-left-color: #F26B47;
+}
+
+.md-typeset table:not([class]) th {
+    background-color: #FDEDE4;
+    color: #231815;
+}
+
+.md-typeset table:not([class]) tr:hover {
+    background-color: #FEF5F0;
+}
+
+.md-button {
+    background-color: #EA5532;
+    color: white;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.md-button:hover {
+    background-color: #D63F1E;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(234, 85, 50, 0.3);
+}
+
+.md-typeset code {
+    background-color: #FEF5F0;
+    color: #231815;
+}
+
+.md-typeset pre code {
+    background-color: #FDEDE4;
+}
+
+/* 導航增強 */
+.md-header {
+    background: linear-gradient(135deg, #EA5532, #F26B47);
+}
+
+.md-footer {
+    background-color: #231815;
+    color: #FDEDE4;
+}
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+    .md-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
 }
