@@ -41,6 +41,11 @@ title: 首頁
 
 ## 📚 重要資源
 
-- [台灣全民安全指引](https://prepare.mnd.gov.tw/) ｜ [全民國防應變手冊 PDF](https://adma.mnd.gov.tw/files/web/191/file_up/100004/60/%E5%85%A8%E6%B0%91%E5%9C%8B%E9%98%B2%E6%87%89%E8%AE%8A%E6%89%8B%E5%86%8A.pdf)
+**官方應變指南**
+- [台灣全民安全指引](https://prepare.mnd.gov.tw/) ｜ [壯闊台灣](https://manual.forward.org.tw/)
+- [中文版全民國防應變手冊 PDF](https://prepare.mnd.gov.tw/assets/pdf/manual.pdf) ｜ [英文版手冊 PDF](https://prepare.mnd.gov.tw/assets/pdf/manual-en.pdf)
+
+**台美組織**
 - [台灣人公共事務會 FAPA](https://fapa.org) ｜ [全美台灣同鄉會 TAA](https://www.taa-usa.org)
+
 - [→ 更多資源](其他資源/index.md)
