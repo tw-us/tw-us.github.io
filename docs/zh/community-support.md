@@ -41,5 +41,5 @@ FAPA 的公開使命是向美國政策制定者、媒體、學者與公眾提供
 
 **Reviewed on: 2026-08-31**
 </section>
-<footer class="field-guide-footer"><a href="/現在怎麼做/">封存指南</a></footer>
+<footer class="field-guide-footer"><a href="/archive/">封存指南</a></footer>
 </div>

@@ -10,7 +10,4 @@ nav:
       - Build a family support plan: en/family-plan.md
       - Support responsibly: en/community-support.md
       - Verify signals and choose your next step: en/when-things-change.md
-  - Archive:
-      - 現在怎麼做
-      - 緊急時怎麼做
-      - 其他資源
+  - Archive: archive.md

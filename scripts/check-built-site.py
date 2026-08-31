@@ -22,7 +22,7 @@ localized_pages = [
     for locale in ("zh", "en")
     for page in ("", "family-plan/", "community-support/", "when-things-change/")
 ]
-required = ["index.html", *localized_pages]
+required = ["index.html", "archive/index.html", *localized_pages]
 for relative in required:
     assert (SITE / relative).is_file(), f"missing built page: site/{relative}"
 
@@ -54,8 +54,20 @@ for relative, peer in (("zh/index.html", "/en/"), ("en/index.html", "/zh/")):
     assert has_class(body, "journey"), f"missing journey: {relative}"
     assert class_count(body, "journey-stop") == 3, f"homepage must have three journey stops: {relative}"
     for destination in ("family-plan/", "community-support/", "when-things-change/"):
-        assert f"href={destination}" in body or f'href="{destination}"' in body, f"missing journey destination {destination}: {relative}"
+        assert f"href={destination}" in body or f'href=\"{destination}\"' in body, f"missing journey destination {destination}: {relative}"
     assert "grid cards" not in body and "grid.cards" not in body, f"generic card grid found: {relative}"
+
+landing = (SITE / "index.html").read_text(encoding="utf-8")
+assert has_class(landing, "landing-page"), "root must be the Calm Field Guide landing page"
+assert class_count(landing, "language-path") == 2, "landing must expose exactly two language paths"
+for destination in ("zh/", "en/", "archive/"):
+    assert destination in landing, f"landing missing destination: {destination}"
+assert "Choose a language to begin" not in landing, "legacy language chooser copy remains at root"
+
+archive = (SITE / "archive/index.html").read_text(encoding="utf-8")
+assert has_class(archive, "archive-guide"), "archive needs an explicit archive guide shell"
+for legacy_destination in ("/現在怎麼做/", "/緊急時怎麼做/", "/其他資源/"):
+    assert legacy_destination in archive, f"archive missing retained legacy route: {legacy_destination}"
 
 family_contracts = {
     "zh/family-plan/index.html": ("今天先做這三件事", "本站不會要求登入，也不會儲存你的聯絡人、文件或家庭計畫", "離線保存"),

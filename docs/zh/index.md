@@ -48,5 +48,5 @@ title: 台美緊急連線
   <a class="journey-stop" href="community-support/"><strong>把你的支援能力帶進社群</strong><span>先顧好家人，再分享可靠資訊並加入既有網絡。</span><span class="arrow" aria-hidden="true">→</span></a>
 </div>
 
-<footer class="field-guide-footer">較早期的資料仍可在<a href="/現在怎麼做/">封存指南</a>查閱；請以每頁標示的官方來源為準。</footer>
+<footer class="field-guide-footer">較早期的資料仍可在<a href="/archive/">封存指南</a>查閱；請以每頁標示的官方來源為準。</footer>
 </div>

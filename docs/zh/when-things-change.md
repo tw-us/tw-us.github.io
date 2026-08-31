@@ -35,5 +35,5 @@ title: 查證情勢與下一步
 
 **Reviewed on: 2026-08-31**
 </section>
-<footer class="field-guide-footer"><a href="/現在怎麼做/">封存指南</a></footer>
+<footer class="field-guide-footer"><a href="/archive/">封存指南</a></footer>
 </div>

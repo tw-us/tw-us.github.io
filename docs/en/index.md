@@ -48,5 +48,5 @@ title: TW-US Crisis Connect
   <a class="journey-stop" href="community-support/"><strong>Support responsibly</strong><span>Strengthen established networks after your family plan is ready.</span><span class="arrow" aria-hidden="true">→</span></a>
 </div>
 
-<footer class="field-guide-footer">Earlier material remains available in the <a href="/現在怎麼做/">archive</a>. Follow the official sources and review record on each guide.</footer>
+<footer class="field-guide-footer">Earlier material remains available in the <a href="/archive/">archive</a>. Follow the official sources and review record on each guide.</footer>
 </div>

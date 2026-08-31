@@ -46,5 +46,5 @@ Taiwan-based family members should use official preparedness tools for local she
 
 **Reviewed on: 2026-08-31**
 </section>
-<footer class="field-guide-footer"><a href="/現在怎麼做/">Archive</a></footer>
+<footer class="field-guide-footer"><a href="/archive/">Archive</a></footer>
 </div>
