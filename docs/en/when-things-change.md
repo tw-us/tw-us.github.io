@@ -1,31 +1,31 @@
 ---
-title: Verify signals and choose your next step
+title: Check official guidance when circumstances change
 ---
 
 <div class="field-guide" markdown>
-<header class="field-guide-header"><a class="wordmark" href="/en/">TW–US</a><nav aria-label="Preparation journey"><a href="/en/family-plan/">Connect</a><a class="route-marker" href="/en/when-things-change/">Prepare</a><a href="/en/community-support/">Support</a></nav><p class="language-switch"><a href="/zh/when-things-change/" lang="zh-Hant">繁中</a></p></header>
+<header class="field-guide-header"><a class="wordmark" href="/en/">TW–US</a><nav aria-label="Guide sections"><a href="/en/family-plan/">Connect</a><a class="route-marker" href="/en/when-things-change/">Prepare</a><a href="/en/community-support/">Support</a></nav><p class="language-switch"><a href="/zh/when-things-change/" lang="zh-Hant">繁中</a></p></header>
 
-<p class="eyebrow">Signal guide · official sources first</p>
+<p class="eyebrow">Official sources come first</p>
 
-# Verify signals and choose your next step
+# Check official guidance when circumstances change
 
-<p class="lede">This site does not publish a conflict forecast or its own risk score. Use official announcements for Taiwan and the affected location to choose an action mode.</p>
+<p class="lede">This site does not predict conflict, issue alerts, or publish a proprietary risk score. Check announcements from authorities in Taiwan and the affected location before deciding what to do.</p>
 
-## Routine preparedness
+## During ordinary times
 
-When there is no official signal that changes daily action, complete the family contact card, backup communication, document, and support plan. Recheck official preparedness tools regularly.
+When authorities have not issued emergency instructions, finish your family contact card, backup ways to communicate, important-document notes, and plans for helping one another. Check official preparedness tools from time to time to make sure you can still use them.
 
-## Heightened attention
+## When concerning news appears
 
-When there is a major, verifiable development, reconfirm family contacts, review essential supplies, download offline information, and compare official and primary sources. News volume, a social post, or a single dashboard score is not an official alert.
+If major news could affect your family, reconfirm contacts, review essential supplies, save key information offline, and compare the report with official announcements and primary sources. Heavy news coverage, one social post, or a score on a website is not an official alert.
 
-## Immediate response
+## When authorities issue emergency instructions
 
-<div class="action-callout">Move to immediate response only when <strong>authorities issue a clear emergency instruction</strong> or <strong>a family member’s location is directly affected</strong>. Confirm immediate safety first, follow local official direction, use the agreed check-in method, and then assess further support.</div>
+<div class="action-callout">Act immediately only when <strong>authorities issue a clear emergency instruction</strong> or <strong>a family member’s location is directly affected</strong>. Check immediate safety first, follow instructions from local authorities, use the agreed check-in method, and then find out what further help is needed.</div>
 
-## External observation
+## Other information sites
 
-[World Monitor](https://www.worldmonitor.app/) can be an external observation tool. It is not an official Taiwan or U.S. government alert source and must not decide an action mode by itself.
+[World Monitor](https://www.worldmonitor.app/) may provide additional context. It is not an official alert source of the Taiwan or U.S. government, and you should not use it alone to decide whether to act.
 
 <section class="source-record" markdown>
 ## Sources and review

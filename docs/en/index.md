@@ -5,7 +5,7 @@ title: TW-US Crisis Connect
 <div class="field-guide" markdown>
 <header class="field-guide-header">
   <a class="wordmark" href="/en/">TW–US</a>
-  <nav aria-label="Preparation journey">
+  <nav aria-label="Guide sections">
     <a class="route-marker" href="family-plan/">Connect</a>
     <a href="when-things-change/">Prepare</a>
     <a href="community-support/">Support</a>
@@ -13,11 +13,11 @@ title: TW-US Crisis Connect
   <p class="language-switch"><a href="/zh/" lang="zh-Hant">繁中</a></p>
 </header>
 
-<p class="eyebrow">A field guide for supporting family in Taiwan</p>
+<p class="eyebrow">For people supporting family in Taiwan</p>
 
-# Make sure your family can find one another.
+# Stay connected with family in Taiwan.
 
-<p class="lede"><strong>Prepared families strengthen Taiwan’s resilience.</strong> From overseas, you can prepare trusted ways to stay connected and support family in Taiwan. This site does not predict conflict or collect emergency information. It helps people prepare, verify, and support established organizations responsibly.</p>
+<p class="lede">If you live overseas, a simple family plan can make it easier to stay in touch when communication is difficult. Agree on contacts and check-in times, then use official information to guide your decisions. This site does not predict conflict, issue alerts, or collect emergency information.</p>
 
 <figure class="narrative-hero">
 <svg viewBox="0 0 880 360" role="img" aria-labelledby="en-family-scene-title en-family-scene-desc" xmlns="http://www.w3.org/2000/svg">
@@ -40,13 +40,13 @@ title: TW-US Crisis Connect
 </svg>
 </figure>
 
-## A three-stop preparation journey
+## Start here
 
 <div class="journey">
-  <a class="journey-stop" href="family-plan/"><strong>Build a family support plan</strong><span>Confirm contacts, a check-in protocol, and essential information.</span><span class="arrow" aria-hidden="true">→</span></a>
-  <a class="journey-stop" href="when-things-change/"><strong>Verify signals and prepare</strong><span>Use official guidance to decide when attention or action should change.</span><span class="arrow" aria-hidden="true">→</span></a>
-  <a class="journey-stop" href="community-support/"><strong>Support responsibly</strong><span>Strengthen established networks after your family plan is ready.</span><span class="arrow" aria-hidden="true">→</span></a>
+  <a class="journey-stop" href="family-plan/"><strong>Make a family contact plan</strong><span>Confirm who to contact, when to check in, and where important information is kept.</span><span class="arrow" aria-hidden="true">→</span></a>
+  <a class="journey-stop" href="when-things-change/"><strong>Check official guidance</strong><span>Follow information from Taiwan and authorities in the affected location when circumstances change.</span><span class="arrow" aria-hidden="true">→</span></a>
+  <a class="journey-stop" href="community-support/"><strong>Help through established organizations</strong><span>After your family has a plan, ask groups already serving the community what they need.</span><span class="arrow" aria-hidden="true">→</span></a>
 </div>
 
-<footer class="field-guide-footer">Earlier material remains available in the <a href="/archive/">archive</a>. Follow the official sources and review record on each guide.</footer>
+<footer class="field-guide-footer">Earlier material remains available in the <a href="/archive/">archive</a>. Each page lists its official sources and review date.</footer>
 </div>

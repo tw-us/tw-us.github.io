@@ -1,35 +1,35 @@
 ---
-title: Support responsibly
+title: Help through established organizations
 ---
 
 <div class="field-guide" markdown>
-<header class="field-guide-header"><a class="wordmark" href="/en/">TW–US</a><nav aria-label="Preparation journey"><a href="/en/family-plan/">Connect</a><a href="/en/when-things-change/">Prepare</a><a class="route-marker" href="/en/community-support/">Support</a></nav><p class="language-switch"><a href="/zh/community-support/" lang="zh-Hant">繁中</a></p></header>
+<header class="field-guide-header"><a class="wordmark" href="/en/">TW–US</a><nav aria-label="Guide sections"><a href="/en/family-plan/">Connect</a><a href="/en/when-things-change/">Prepare</a><a class="route-marker" href="/en/community-support/">Support</a></nav><p class="language-switch"><a href="/zh/community-support/" lang="zh-Hant">繁中</a></p></header>
 
 <p class="eyebrow">Community support · family first</p>
 
-# Support responsibly
+# Help through established organizations
 
-<p class="lede">Prepare your own family connection first. Then use your time, skills, and networks to strengthen established community efforts.</p>
+<p class="lede">Start with your family’s contact plan. Then, if you have time or skills to offer, ask organizations that already know the community and have clear roles what they need.</p>
 
-<div class="action-callout">This site does not collect donations, incident reports, or emergency dispatch requests. Do not fundraise or organize dispatch independently through this site; join organizations with established responsibilities, procedures, and local networks.</div>
+<div class="action-callout">This site does not collect donations or incident reports, and it does not receive or arrange emergency dispatch requests. Do not use it to raise money, report conditions, or organize a response. Work with organizations that have clear responsibilities, procedures, and contacts in the affected community.</div>
 
-## 1 · Prepare your family first
+## Start with your family
 
-- [Build a family support plan](family-plan.md)
-- Practice the check-in and backup contact process together
-- Share only information that leads back to its original source
+- [Make a family contact plan](family-plan.md)
+- Practice your check-in and backup-contact plan together
+- Link to the original source whenever you share information
 
-## 2 · Share verified information
+## Share information people can check
 
-Share current official guidance and direct links to established organizations. Check the source, date, and location before sharing. Do not forward anonymous screenshots, unverified military claims, or unverified requests for money.
+Share current official guidance and direct links to organizations. Before sharing, check the source, date, and location. Do not pass along anonymous screenshots, unverified military claims, or unverified requests for money.
 
-## 3 · Offer a useful skill to an established network
+## Ask where your skills are needed
 
-Translation, information verification, digital security, web maintenance, event coordination, first aid, and community communications can all help. Ask an established organization what it needs before committing time or resources.
+Translation, fact-checking, digital security, web maintenance, event coordination, first aid, and community communications can all help. Before promising time, supplies, or other resources, ask an established organization what it currently needs.
 
 ## Advocacy and public education
 
-FAPA’s public mission is to provide information about Taiwan to U.S. policymakers, media, scholars, and the public, and to advance grassroots advocacy. On this site, FAPA is listed for **advocacy and public education**, not as an emergency-relief provider.
+FAPA’s public mission is to provide information about Taiwan to U.S. policymakers, media, scholars, and the public, and to advance grassroots advocacy. It is listed here for **advocacy and public education**. FAPA does not provide emergency relief; for help on the ground, follow local official information and contact relief organizations with formal points of contact.
 
 [Visit FAPA](https://fapa.org/){ target="_blank" rel="noopener" }
 

@@ -13,11 +13,11 @@ title: 台美緊急連線
   <p class="language-switch"><a href="/en/" lang="en">English</a></p>
 </header>
 
-<p class="eyebrow">給海外台灣人的家庭準備指南</p>
+<p class="eyebrow">給人在海外、牽掛台灣家人的你</p>
 
-# 先把彼此找得到的方式準備好。
+# 先和家人約好，遇到事時怎麼聯絡。
 
-<p class="lede">人在海外，也能在危機前把聯絡、文件與支援方式準備好。本站不預測危機，也不蒐集你的資料；我們幫你用可靠來源完成下一步準備。</p>
+<p class="lede">趁平常先約好怎麼聯絡、重要資料放在哪裡，以及彼此能做什麼。這裡不會預測危機或蒐集你的資料；需要判斷現場情況時，請以家人所在地和台灣官方公告為準。</p>
 
 <figure class="narrative-hero">
 <svg viewBox="0 0 880 360" role="img" aria-labelledby="zh-family-scene-title zh-family-scene-desc" xmlns="http://www.w3.org/2000/svg">
@@ -40,13 +40,13 @@ title: 台美緊急連線
 </svg>
 </figure>
 
-## 三站準備路徑
+## 從三件事開始
 
 <div class="journey">
-  <a class="journey-stop" href="family-plan/"><strong>建立家人支援計畫</strong><span>用 10 分鐘確認聯絡人、報平安方式與重要資訊。</span><span class="arrow" aria-hidden="true">→</span></a>
-  <a class="journey-stop" href="when-things-change/"><strong>查證情勢，做好準備</strong><span>以官方公告判斷何時提高注意、何時立即應變。</span><span class="arrow" aria-hidden="true">→</span></a>
-  <a class="journey-stop" href="community-support/"><strong>把你的支援能力帶進社群</strong><span>先顧好家人，再分享可靠資訊並加入既有網絡。</span><span class="arrow" aria-hidden="true">→</span></a>
+  <a class="journey-stop" href="family-plan/"><strong>和家人約好怎麼聯絡</strong><span>花約 10 分鐘確認聯絡人、報平安方式和重要資料放在哪裡。</span><span class="arrow" aria-hidden="true">→</span></a>
+  <a class="journey-stop" href="when-things-change/"><strong>看到消息時，先確認來源</strong><span>有官方明確指示時，照家人所在地的指示行動。</span><span class="arrow" aria-hidden="true">→</span></a>
+  <a class="journey-stop" href="community-support/"><strong>想幫忙時，先顧好家人</strong><span>再分享查得到原始來源的資訊，或加入已有窗口和分工的團體。</span><span class="arrow" aria-hidden="true">→</span></a>
 </div>
 
-<footer class="field-guide-footer">較早期的資料仍可在<a href="/archive/">封存指南</a>查閱；請以每頁標示的官方來源為準。</footer>
+<footer class="field-guide-footer">舊版內容仍可在<a href="/archive/">封存指南</a>查閱；各頁資訊請以標示的官方來源為準。</footer>
 </div>

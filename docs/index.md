@@ -9,11 +9,11 @@ title: TW–US Crisis Connect
   <p class="language-switch"><a href="archive/">Archive 封存資料</a></p>
 </header>
 
-<p class="eyebrow">一份給跨境家人的準備指南</p>
+<p class="eyebrow">給人在海外、牽掛台灣家人的你</p>
 
-# 先把彼此找得到的方式準備好。
+# 先和家人約好，遇到事時怎麼聯絡。
 
-<p class="lede">A calm guide for people overseas who want to stay connected with family in Taiwan. Start in the language that feels most natural to you.</p>
+<p class="lede">For people overseas who want to stay in touch with family in Taiwan. Choose the language that works best for your family.</p>
 
 <figure class="narrative-hero landing-hero">
 <svg viewBox="0 0 880 360" role="img" aria-labelledby="landing-family-scene-title landing-family-scene-desc" xmlns="http://www.w3.org/2000/svg">
@@ -37,11 +37,11 @@ title: TW–US Crisis Connect
 </figure>
 
 <section class="language-paths" aria-label="Choose a guide">
-  <a class="language-path" href="zh/"><span class="path-kicker">繁體中文</span><strong>和台灣家人建立支援計畫</strong><span>從聯絡方式、重要資訊到可信來源，開始你的三站準備路徑。</span><span class="path-arrow" aria-hidden="true">→</span></a>
-  <a class="language-path" href="en/"><span class="path-kicker" lang="en">English</span><strong>Prepare to support family in Taiwan</strong><span>Begin a practical, responsible preparedness journey for overseas families.</span><span class="path-arrow" aria-hidden="true">→</span></a>
+  <a class="language-path" href="zh/"><span class="path-kicker">繁體中文</span><strong>先和台灣家人約好怎麼聯絡</strong><span>確認聯絡方式、重要資料放在哪裡，以及該看哪些官方消息。</span><span class="path-arrow" aria-hidden="true">→</span></a>
+  <a class="language-path" href="en/"><span class="path-kicker" lang="en">English</span><strong>Make a plan to stay in touch with family in Taiwan</strong><span>Start with contacts, check-in plans, and official sources of information.</span><span class="path-arrow" aria-hidden="true">→</span></a>
 </section>
 
-<p class="landing-boundary">本站不預測危機、不蒐集家庭資料，也不代管捐款。<span lang="en">It is a guide, not an alert system or a data service.</span></p>
+<p class="landing-boundary">這裡提供準備事項，不會預測危機、保存家庭資料或代管捐款。<span lang="en">This site does not issue alerts, store family information, or handle donations.</span></p>
 
-<footer class="field-guide-footer">較早期的內容已完整封存，仍可在 <a href="archive/">Archive 封存資料</a> 查閱。舊連結會繼續保留。</footer>
+<footer class="field-guide-footer">舊版內容仍完整保留在 <a href="archive/">Archive 封存資料</a>，原有連結也會繼續有效。</footer>
 </div>

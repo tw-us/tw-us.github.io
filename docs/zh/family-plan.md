@@ -1,5 +1,5 @@
 ---
-title: 建立家人支援計畫
+title: 和家人約好怎麼聯絡
 ---
 
 <div class="field-guide" markdown>
@@ -7,16 +7,16 @@ title: 建立家人支援計畫
 
 <p class="eyebrow">家庭筆記 · 約 10 分鐘</p>
 
-# 建立家人支援計畫
+# 和家人約好怎麼聯絡
 
-<div class="privacy-note">本站不會要求登入，也不會儲存你的聯絡人、文件或家庭計畫。這不是線上表單；請把筆記用你與家人都能取得的方式離線保存，並定期演練。</div>
+<div class="privacy-note">這一頁只提供筆記提醒，不用登入，也不會儲存你的聯絡人、文件或寫下的安排。請把筆記離線保存在家人都拿得到的地方，偶爾一起照著試一次。</div>
 
 ## 今天先做這三件事
 
 <section class="notebook-sheet" aria-label="三項家庭準備提示">
-  <div class="notebook-prompt"><div><strong>確認兩位聯絡人</strong><br>指定一位台灣主要聯絡人與一位備援聯絡人；彼此確認電話、通訊軟體與 email。</div></div>
-  <div class="notebook-prompt"><div><strong>約定報平安方式</strong><br>約定固定時間、簡短的平安訊息，以及超過多久未回覆時由誰聯絡誰。</div></div>
-  <div class="notebook-prompt"><div><strong>找到重要資訊</strong><br>確認家人知道護照、身分證件、常用藥、醫療資訊與緊急聯絡卡放在哪裡。</div></div>
+  <div class="notebook-prompt"><div><strong>確認兩位聯絡人</strong><br>先約好一位在台灣的主要聯絡人，再找一位備援；彼此確認電話、通訊軟體與 email。</div></div>
+  <div class="notebook-prompt"><div><strong>約定怎麼報平安</strong><br>約好固定時間和簡短的平安訊息，也寫下多久沒回覆時，由誰先聯絡誰。</div></div>
+  <div class="notebook-prompt"><div><strong>確認重要資料放在哪裡</strong><br>讓家人都知道護照、身分證件、常用藥、醫療資訊與緊急聯絡卡放在哪裡。</div></div>
 </section>
 
 ## 建立一張家庭聯絡卡
@@ -27,16 +27,16 @@ title: 建立家人支援計畫
   <div class="notebook-prompt"><div>緊急會合地點與替代地點</div></div>
   <div class="notebook-prompt"><div>慢性病、過敏、固定用藥與照顧需求</div></div>
   <div class="notebook-prompt"><div>證件與重要文件的保存位置</div></div>
-  <div class="notebook-prompt"><div>在台灣與海外可用的資金支援方式</div></div>
+  <div class="notebook-prompt"><div>台灣家人需要時，海外親友可用哪些方式提供資金</div></div>
 </section>
 
-## 訊息中斷時
+## 如果一時聯絡不上
 
-先依照家人所在縣市與官方公告行動。不要只依賴單一通訊軟體；事前下載並熟悉多種通訊方式，也把重要電話寫在紙本聯絡卡上。
+在台灣的家人先照所在地縣市與官方公告行動。平常就約好至少兩種大家會用的聯絡方式，也把重要電話寫在紙本聯絡卡上。
 
-台灣家人可使用官方防災工具查詢避難收容處所、救濟站、物資配售站與防空避難所；海外親友的角色是協助確認資訊、維持聯絡，不是替代現場官方指示。
+台灣家人可使用官方防災工具查詢避難收容處所、救濟站、物資配售站與防空避難所。人在海外能做的是協助核對資訊、保持聯絡；現場仍以官方指示為準。
 
-<div class="action-callout" markdown>下一步：[查證情勢與下一步](when-things-change.md) · [把你的支援能力帶進社群](community-support.md)</div>
+<div class="action-callout" markdown>下一步：[看到消息時怎麼確認](when-things-change.md) · [想幫忙時怎麼做](community-support.md)</div>
 
 <section class="source-record" markdown>
 ## 來源與覆核

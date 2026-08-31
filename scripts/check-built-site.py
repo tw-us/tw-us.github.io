@@ -1,6 +1,7 @@
 """Deterministic checks for the public static site artifact."""
 
 from pathlib import Path
+from html.parser import HTMLParser
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,6 +17,45 @@ def has_class(body: str, class_name: str) -> bool:
 
 def class_count(body: str, class_name: str) -> int:
     return len(re.findall(rf'class=(?:["\'][^"\']*\b{re.escape(class_name)}\b[^"\']*["\']|{re.escape(class_name)}(?:[ >]))', body))
+
+
+class FieldGuideText(HTMLParser):
+    """Collect reader-visible text inside the public field-guide surface only."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self._guide_depth = 0
+        self._ignored_depth = 0
+        self.parts: list[str] = []
+        self._void_tags = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        classes = dict(attrs).get("class", "") or ""
+        if self._guide_depth == 0 and "field-guide" in classes.split():
+            self._guide_depth = 1
+        elif self._guide_depth and tag not in self._void_tags:
+            self._guide_depth += 1
+        if self._guide_depth and tag in {"script", "style"}:
+            self._ignored_depth += 1
+
+    def handle_endtag(self, tag: str) -> None:
+        if self._guide_depth and tag in {"script", "style"} and self._ignored_depth:
+            self._ignored_depth -= 1
+        if self._guide_depth and tag not in self._void_tags:
+            self._guide_depth -= 1
+
+    def handle_data(self, data: str) -> None:
+        if self._guide_depth and not self._ignored_depth:
+            self.parts.append(data)
+
+
+def visible_field_guide_text(body: str) -> str:
+    parser = FieldGuideText()
+    parser.feed(body)
+    parser.close()
+    text = " ".join(parser.parts)
+    assert text.strip(), "missing reader-visible field-guide text"
+    return text
 
 localized_pages = [
     f"{locale}/{page}index.html"
@@ -70,11 +110,12 @@ for legacy_destination in ("/現在怎麼做/", "/緊急時怎麼做/", "/其他
     assert legacy_destination in archive, f"archive missing retained legacy route: {legacy_destination}"
 
 family_contracts = {
-    "zh/family-plan/index.html": ("今天先做這三件事", "本站不會要求登入，也不會儲存你的聯絡人、文件或家庭計畫", "離線保存"),
-    "en/family-plan/index.html": ("Start with these three actions today", "does not ask you to sign in or store your contacts, documents, or family plan", "access offline"),
+    "zh/family-plan/index.html": ("今天先做這三件事", "不用登入，也不會儲存你的聯絡人、文件或寫下的安排", "離線保存在家人都拿得到的地方"),
+    "en/family-plan/index.html": ("Three things to do today", "do not store contacts, documents, or family plans", "without internet access"),
 }
 for relative, strings in family_contracts.items():
     body = (SITE / relative).read_text(encoding="utf-8")
+    visible_text = visible_field_guide_text(body)
     assert has_class(body, "notebook-sheet"), f"missing notebook sheet: {relative}"
     assert class_count(body, "notebook-prompt") >= 3, f"missing notebook prompts: {relative}"
     field_guide_match = re.search(r'<(?:div|main) class=field-guide>(.*?)</(?:div|main)>', body, re.DOTALL)
@@ -82,19 +123,20 @@ for relative, strings in family_contracts.items():
     assert "<form" not in field_guide_match.group(1).lower(), f"form surface is prohibited: {relative}"
     assert has_class(body, "source-record"), f"missing source record: {relative}"
     for text in strings:
-        assert text in body, f"missing family safety copy {text!r}: {relative}"
+        assert text in visible_text, f"missing visible family safety copy {text!r}: {relative}"
 
 editorial_contracts = {
-    "zh/community-support/index.html": ("先讓你與家人的聯絡計畫可運作", "分享已驗證的資訊", "不要透過本站自行募集款項、收集受災資訊或派遣救援", "不是緊急救援提供者"),
-    "en/community-support/index.html": ("Prepare your own family connection first", "Share verified information", "does not collect donations, incident reports, or emergency dispatch requests", "not as an emergency-relief provider"),
-    "zh/when-things-change/index.html": ("官方公告為準", "提高注意", "官方發布明確緊急指示", "不是台灣或美國政府的官方警報來源，也不能單獨決定"),
-    "en/when-things-change/index.html": ("official announcements", "Heightened attention", "authorities issue a clear emergency instruction", "not an official Taiwan or U.S. government alert source and must not decide"),
+    "zh/community-support/index.html": ("先確定你和家人聯絡得上", "原始來源", "不是募款、回報災情或安排救援的管道", "不提供緊急救援"),
+    "en/community-support/index.html": ("Start with your family’s contact plan", "original source", "does not collect donations or incident reports", "does not provide emergency relief"),
+    "zh/when-things-change/index.html": ("台灣官方公告", "消息有變化時", "官方發布明確緊急指示", "不是台灣或美國政府的官方警報來源"),
+    "en/when-things-change/index.html": ("authorities in Taiwan", "When concerning news appears", "authorities issue a clear emergency instruction", "not an official alert source of the Taiwan or U.S. government"),
 }
 for relative, strings in editorial_contracts.items():
     body = (SITE / relative).read_text(encoding="utf-8")
+    visible_text = visible_field_guide_text(body)
     assert has_class(body, "source-record"), f"missing source record: {relative}"
     for text in strings:
-        assert text in body, f"missing editorial safety copy {text!r}: {relative}"
+        assert text in visible_text, f"missing visible editorial safety copy {text!r}: {relative}"
 
 for relative in localized_pages:
     body = (SITE / relative).read_text(encoding="utf-8")
