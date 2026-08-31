@@ -12,6 +12,9 @@ venv
 build
 site
 
+# Local visual brainstorm sessions (may include a protected review URL key)
+.superpowers/
+
 # Distribution files
 dist
 mkdocs_material.egg-info

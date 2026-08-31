@@ -2,15 +2,14 @@
 title: Verify signals and choose your next step
 ---
 
-<div class="language-switch" markdown>
+<div class="field-guide" markdown>
+<header class="field-guide-header"><a class="wordmark" href="/en/">TW–US</a><nav aria-label="Preparation journey"><a href="/en/family-plan/">Connect</a><a class="route-marker" href="/en/when-things-change/">Prepare</a><a href="/en/community-support/">Support</a></nav><p class="language-switch"><a href="/zh/when-things-change/" lang="zh-Hant">繁中</a></p></header>
 
-[繁中](/zh/when-things-change/){ lang="zh-Hant" }
-
-</div>
+<p class="eyebrow">Signal guide · official sources first</p>
 
 # Verify signals and choose your next step
 
-This site does not publish a conflict forecast or its own risk score. Use official announcements for Taiwan and the affected location to choose an action mode.
+<p class="lede">This site does not publish a conflict forecast or its own risk score. Use official announcements for Taiwan and the affected location to choose an action mode.</p>
 
 ## Routine preparedness
 
@@ -22,15 +21,19 @@ When there is a major, verifiable development, reconfirm family contacts, review
 
 ## Immediate response
 
-Move to immediate response only when authorities issue a clear emergency instruction or a family member’s location is directly affected. Confirm immediate safety first, follow local official direction, use the agreed check-in method, and then assess further support.
+<div class="action-callout">Move to immediate response only when <strong>authorities issue a clear emergency instruction</strong> or <strong>a family member’s location is directly affected</strong>. Confirm immediate safety first, follow local official direction, use the agreed check-in method, and then assess further support.</div>
 
 ## External observation
 
 [World Monitor](https://www.worldmonitor.app/) can be an external observation tool. It is not an official Taiwan or U.S. government alert source and must not decide an action mode by itself.
 
-## Sources
+<section class="source-record" markdown>
+## Sources and review
 
 - [Taiwan All-out Defense Readiness](https://prepare.mnd.gov.tw/)
 - [World Monitor](https://www.worldmonitor.app/)
 
 **Reviewed on: 2026-08-31**
+</section>
+<footer class="field-guide-footer"><a href="/現在怎麼做/">Archive</a></footer>
+</div>

@@ -2,15 +2,14 @@
 title: 查證情勢與下一步
 ---
 
-<div class="language-switch" markdown>
+<div class="field-guide" markdown>
+<header class="field-guide-header"><a class="wordmark" href="/zh/">TW–US</a><nav aria-label="準備路徑"><a href="/zh/family-plan/">聯絡</a><a class="route-marker" href="/zh/when-things-change/">準備</a><a href="/zh/community-support/">支援</a></nav><p class="language-switch"><a href="/en/when-things-change/" lang="en">English</a></p></header>
 
-[English](/en/when-things-change/){ lang="en" }
-
-</div>
+<p class="eyebrow">訊號指南 · 官方來源優先</p>
 
 # 查證情勢與下一步
 
-本站不發布自行推論的危機分數或戰爭預測。請以所在地與台灣官方公告為準，再選擇合適的行動模式。
+<p class="lede">本站不發布自行推論的危機分數或戰爭預測。請以所在地與台灣官方公告為準，再選擇合適的行動模式。</p>
 
 ## 常態準備
 
@@ -22,15 +21,19 @@ title: 查證情勢與下一步
 
 ## 立即應變
 
-只有在**官方發布明確緊急指示**或**家人所在地已受到直接影響**時，才進入立即應變：先確認人身安全、依所在地官方指示行動、以約定方式報平安，再評估下一步支援。
+<div class="action-callout">只有在<strong>官方發布明確緊急指示</strong>或<strong>家人所在地已受到直接影響</strong>時，才進入立即應變：先確認人身安全、依所在地官方指示行動、以約定方式報平安，再評估下一步支援。</div>
 
 ## 外部觀測工具
 
 [World Monitor](https://www.worldmonitor.app/) 可以作為外部情勢觀測工具；它不是台灣或美國政府的官方警報來源，也不能單獨決定你的行動模式。
 
+<section class="source-record" markdown>
 ## 來源與覆核
 
 - [臺灣全民安全指引](https://prepare.mnd.gov.tw/)
 - [World Monitor](https://www.worldmonitor.app/)
 
 **Reviewed on: 2026-08-31**
+</section>
+<footer class="field-guide-footer"><a href="/現在怎麼做/">封存指南</a></footer>
+</div>

@@ -3,6 +3,7 @@ site_url: https://tw-us.cc
 theme:
   name: material
   logo: assets/logo.png
+  font: false
   # NOTE: DO NOT set zh-TW language as it will break the search bar (stemming mismatched)
   # language: zh-TW
   palette:
@@ -26,9 +27,7 @@ theme:
         name: Switch to system preference
   features:
     - navigation.indexes # Use index.md as the entry point of a folder.
-    - toc.integrate # Integrate table of contents into nav.
     - navigation.top # Provide a button to scroll to the top of the page.
-    - navigation.tabs # Place top level nav items in the tab bar.
 
 # NOTE: Commented out before the first version release
 # extra:
