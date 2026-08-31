@@ -30,4 +30,16 @@ for relative, strings in expected_copy.items():
     for text in strings:
         assert text in body, f"missing expected copy {text!r}: {relative}"
 
+workflow = Path('.github/workflows/pages.yml').read_text(encoding='utf-8')
+for required in [
+    'actions/configure-pages@v5',
+    'actions/upload-pages-artifact@v4',
+    'actions/deploy-pages@v4',
+    'mkdocs build --strict',
+    'check-built-site.py',
+    'pages: write',
+    'needs: build',
+]:
+    assert required in workflow, f"workflow missing: {required}"
+
 print("PASS: core zh/en routes, language switches, and action-copy contracts are present")

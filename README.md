@@ -95,9 +95,8 @@
    網站會在 `http://127.0.0.1:8000` 運行
 
 4. **部署到 GitHub Pages**：
-   ```bash
-   poetry run mkdocs gh-deploy --force --clean
-   ```
+
+   Do not run `mkdocs gh-deploy`. GitHub Actions builds and deploys `main` to GitHub Pages after validation.
 
 ### 內容編輯指南
 
@@ -108,6 +107,13 @@
 - **更新**：定期檢查並更新連結和資訊
 
 ### 提交 Pull Request
+
+建立 PR 前必須執行：
+
+```bash
+poetry run mkdocs build --strict
+poetry run python scripts/check-built-site.py
+```
 
 1. Fork 本專案
 2. 建立功能分支 (`git checkout -b feature/amazing-feature`)
