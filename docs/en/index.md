@@ -15,7 +15,7 @@ title: TW-US Crisis Connect
 
 <p class="eyebrow">For people supporting family in Taiwan</p>
 
-# Stay connected with family in Taiwan.
+# Make a plan with your family now: how to check in during an emergency.
 
 <p class="lede">If you live overseas, a simple family plan can make it easier to stay in touch when communication is difficult. Agree on contacts and check-in times, then use official information to guide your decisions. This site does not predict conflict, issue alerts, or collect emergency information.</p>
 

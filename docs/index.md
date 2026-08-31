@@ -11,7 +11,7 @@ title: TW–US Crisis Connect
 
 <p class="eyebrow">給人在海外、牽掛台灣家人的你</p>
 
-# 先和家人約好，遇到事時怎麼聯絡。
+# 現在就和家人約好：遇到緊急狀況時，怎麼聯絡、怎麼報平安。
 
 <p class="lede">For people overseas who want to stay in touch with family in Taiwan. Choose the language that works best for your family.</p>
 
