@@ -3,7 +3,7 @@ title: 和家人約好怎麼聯絡
 ---
 
 <div class="field-guide" markdown>
-<header class="field-guide-header"><a class="wordmark" href="/zh/">TW–US</a><nav aria-label="準備路徑"><a class="route-marker" href="/zh/family-plan/">聯絡</a><a href="/zh/when-things-change/">準備</a><a href="/zh/community-support/">支援</a></nav><p class="language-switch"><a href="/en/family-plan/" lang="en">English</a></p></header>
+<header class="field-guide-header"><a class="wordmark" href="/zh/"><img class="wordmark-mark" src="../../assets/tw-us-mark.svg" alt="" width="24" height="24"><span>TW–US</span></a><nav aria-label="準備路徑"><a class="route-marker" href="/zh/family-plan/">聯絡</a><a href="/zh/when-things-change/">準備</a><a href="/zh/community-support/">支援</a></nav><p class="language-switch"><a href="/en/family-plan/" lang="en">English</a></p></header>
 
 <p class="eyebrow">家庭筆記 · 約 10 分鐘</p>
 

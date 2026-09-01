@@ -4,7 +4,7 @@ title: TW-US Crisis Connect
 
 <div class="field-guide" markdown>
 <header class="field-guide-header">
-  <a class="wordmark" href="/en/">TW–US</a>
+  <a class="wordmark" href="/en/"><img class="wordmark-mark" src="../assets/tw-us-mark.svg" alt="" width="24" height="24"><span>TW–US</span></a>
   <nav aria-label="Guide sections">
     <a class="route-marker" href="family-plan/">Connect</a>
     <a href="when-things-change/">Prepare</a>

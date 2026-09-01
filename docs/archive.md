@@ -4,7 +4,7 @@ title: Archive 封存資料
 
 <div class="field-guide archive-guide" markdown>
 <header class="field-guide-header">
-  <a class="wordmark" href="/">TW–US</a>
+  <a class="wordmark" href="/"><img class="wordmark-mark" src="../assets/tw-us-mark.svg" alt="" width="24" height="24"><span>TW–US</span></a>
   <nav aria-label="主要路徑"><a href="/zh/">繁中指南</a><a href="/en/" lang="en">English guide</a></nav>
   <p class="language-switch"><a class="route-marker" href="/archive/">Archive</a></p>
 </header>

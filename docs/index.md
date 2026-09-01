@@ -4,7 +4,7 @@ title: TW–US Crisis Connect
 
 <div class="field-guide landing-page" markdown>
 <header class="field-guide-header landing-header">
-  <a class="wordmark" href="/">TW–US</a>
+  <a class="wordmark" href="/"><img class="wordmark-mark" src="assets/tw-us-mark.svg" alt="" width="24" height="24"><span>TW–US</span></a>
   <p class="landing-header-note">Crisis Connect · 台美緊急連線</p>
   <p class="language-switch"><a href="archive/">Archive 封存資料</a></p>
 </header>

@@ -21,6 +21,8 @@
 
 body { background: var(--paper); color: var(--ink); font-family: var(--body); }
 .md-header { background: var(--moss); }
+/* The primary two-tone mark is drawn for a paper field; keep that field on the moss header. */
+.md-header__button.md-logo img { background: var(--paper); border-radius: .15rem; box-sizing: content-box; padding: .2rem; }
 .md-footer { background: var(--ink); }
 .md-typeset a { text-underline-offset: .16em; }
 .md-typeset a:focus-visible, .field-guide a:focus-visible {
@@ -47,9 +49,12 @@ body:has(.field-guide) .md-content__inner::before { display: none; }
   padding: .75rem max(1.2rem, calc((100vw - 48rem) / 2 + 1.2rem)); position: sticky; top: 0; z-index: 4;
 }
 .field-guide-header .wordmark {
-  color: var(--ink); font-family: var(--display); font-size: 1.12rem; font-weight: 700;
-  letter-spacing: .08em; text-decoration: none; white-space: nowrap;
+  align-items: center; color: var(--ink); display: inline-flex; font-family: var(--display);
+  font-size: 1.12rem; font-weight: 700; gap: .45rem; letter-spacing: .08em;
+  text-decoration: none; white-space: nowrap;
 }
+/* Two-tone mark at 24px: the negative path stays legible without crowding the routes. */
+.wordmark-mark { display: block; flex: none; height: 1.2rem; width: 1.2rem; }
 .landing-header-note { color: #526159; font-size: .72rem; margin: 0 auto 0 0; }
 .landing-page { max-width: 58rem; }
 .landing-page .narrative-hero { margin-left: -1.8rem; margin-right: -1.8rem; }

@@ -2,7 +2,8 @@ site_name: 台美緊急連線 TW-US Crisis Connect
 site_url: https://tw-us.cc
 theme:
   name: material
-  logo: assets/logo.png
+  logo: assets/tw-us-mark.svg
+  favicon: assets/favicon.svg
   font: false
   # NOTE: DO NOT set zh-TW language as it will break the search bar (stemming mismatched)
   # language: zh-TW

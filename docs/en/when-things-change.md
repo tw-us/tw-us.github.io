@@ -3,7 +3,7 @@ title: Check official guidance when circumstances change
 ---
 
 <div class="field-guide" markdown>
-<header class="field-guide-header"><a class="wordmark" href="/en/">TW–US</a><nav aria-label="Guide sections"><a href="/en/family-plan/">Connect</a><a class="route-marker" href="/en/when-things-change/">Prepare</a><a href="/en/community-support/">Support</a></nav><p class="language-switch"><a href="/zh/when-things-change/" lang="zh-Hant">繁中</a></p></header>
+<header class="field-guide-header"><a class="wordmark" href="/en/"><img class="wordmark-mark" src="../../assets/tw-us-mark.svg" alt="" width="24" height="24"><span>TW–US</span></a><nav aria-label="Guide sections"><a href="/en/family-plan/">Connect</a><a class="route-marker" href="/en/when-things-change/">Prepare</a><a href="/en/community-support/">Support</a></nav><p class="language-switch"><a href="/zh/when-things-change/" lang="zh-Hant">繁中</a></p></header>
 
 <p class="eyebrow">Official sources come first</p>
 

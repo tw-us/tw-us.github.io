@@ -3,7 +3,7 @@ title: Make a family contact plan
 ---
 
 <div class="field-guide" markdown>
-<header class="field-guide-header"><a class="wordmark" href="/en/">TW–US</a><nav aria-label="Guide sections"><a class="route-marker" href="/en/family-plan/">Connect</a><a href="/en/when-things-change/">Prepare</a><a href="/en/community-support/">Support</a></nav><p class="language-switch"><a href="/zh/family-plan/" lang="zh-Hant">繁中</a></p></header>
+<header class="field-guide-header"><a class="wordmark" href="/en/"><img class="wordmark-mark" src="../../assets/tw-us-mark.svg" alt="" width="24" height="24"><span>TW–US</span></a><nav aria-label="Guide sections"><a class="route-marker" href="/en/family-plan/">Connect</a><a href="/en/when-things-change/">Prepare</a><a href="/en/community-support/">Support</a></nav><p class="language-switch"><a href="/zh/family-plan/" lang="zh-Hant">繁中</a></p></header>
 
 <p class="eyebrow">Family notebook · about 10 minutes</p>
 

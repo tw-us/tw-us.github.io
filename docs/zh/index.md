@@ -4,7 +4,7 @@ title: 台美緊急連線
 
 <div class="field-guide" markdown>
 <header class="field-guide-header">
-  <a class="wordmark" href="/zh/">TW–US</a>
+  <a class="wordmark" href="/zh/"><img class="wordmark-mark" src="../assets/tw-us-mark.svg" alt="" width="24" height="24"><span>TW–US</span></a>
   <nav aria-label="準備路徑">
     <a class="route-marker" href="family-plan/">聯絡</a>
     <a href="when-things-change/">準備</a>
