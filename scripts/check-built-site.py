@@ -49,6 +49,33 @@ class FieldGuideText(HTMLParser):
             self.parts.append(data)
 
 
+class MetaTags(HTMLParser):
+    """Collect <meta> tags keyed by their property/name, order- and quote-insensitive.
+
+    The minify plugin rewrites attribute order and strips optional quotes, so the
+    built HTML must be parsed rather than matched with a literal string.
+    """
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.tags: dict[str, list[str]] = {}
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag != "meta":
+            return
+        attributes = dict(attrs)
+        key = attributes.get("property") or attributes.get("name")
+        if key:
+            self.tags.setdefault(key, []).append(attributes.get("content") or "")
+
+
+def meta_tags(body: str) -> dict[str, list[str]]:
+    parser = MetaTags()
+    parser.feed(body)
+    parser.close()
+    return parser.tags
+
+
 def visible_field_guide_text(body: str) -> str:
     parser = FieldGuideText()
     parser.feed(body)
@@ -141,6 +168,59 @@ for relative, strings in editorial_contracts.items():
 for relative in localized_pages:
     body = (SITE / relative).read_text(encoding="utf-8")
     assert "Reviewed on: 2026-08-31" in body or relative.endswith("/index.html") and relative.count("/") == 1, f"missing review date: {relative}"
+
+OG_IMAGE_URL = "https://tw-us.cc/assets/og-image.png"
+OG_IMAGE_WIDTH = "1731"
+OG_IMAGE_HEIGHT = "909"
+
+og_asset = SITE / "assets" / "og-image.png"
+assert og_asset.is_file(), "missing built social preview asset: site/assets/og-image.png"
+header = og_asset.read_bytes()[:24]
+assert header[:8] == b"\x89PNG\r\n\x1a\n", "social preview asset is not a PNG"
+assert header[12:16] == b"IHDR", "social preview asset has no PNG header chunk"
+built_width = int.from_bytes(header[16:20], "big")
+built_height = int.from_bytes(header[20:24], "big")
+assert (built_width, built_height) == (int(OG_IMAGE_WIDTH), int(OG_IMAGE_HEIGHT)), (
+    f"social preview asset must stay {OG_IMAGE_WIDTH}x{OG_IMAGE_HEIGHT}, got {built_width}x{built_height}"
+)
+
+social_pages = [
+    "index.html",
+    "zh/index.html",
+    "en/family-plan/index.html",
+    "archive/index.html",
+]
+for relative in social_pages:
+    body = (SITE / relative).read_text(encoding="utf-8")
+    tags = meta_tags(body)
+    for key, expected in (
+        ("og:type", "website"),
+        ("og:image", OG_IMAGE_URL),
+        ("og:image:secure_url", OG_IMAGE_URL),
+        ("og:image:type", "image/png"),
+        ("og:image:width", OG_IMAGE_WIDTH),
+        ("og:image:height", OG_IMAGE_HEIGHT),
+        ("twitter:card", "summary_large_image"),
+        ("twitter:image", OG_IMAGE_URL),
+    ):
+        values = tags.get(key, [])
+        assert len(values) == 1, f"expected exactly one {key} tag, got {len(values)}: {relative}"
+        assert values[0] == expected, f"{key} must be {expected!r}, got {values[0]!r}: {relative}"
+    for alt_key in ("og:image:alt", "twitter:image:alt"):
+        alts = tags.get(alt_key, [])
+        assert len(alts) == 1, f"expected exactly one {alt_key} tag, got {len(alts)}: {relative}"
+        assert "台美緊急連線" in alts[0] and "TW–US Crisis Connect" in alts[0], (
+            f"{alt_key} must name the brand in both languages: {relative}"
+        )
+    titles = tags.get("og:title", [])
+    assert len(titles) == 1 and titles[0].strip(), f"missing single og:title: {relative}"
+    urls = tags.get("og:url", [])
+    assert len(urls) == 1 and urls[0].startswith("https://tw-us.cc/"), f"og:url must be absolute: {relative}"
+    assert "<link href=https://tw-us.cc/" in body or 'rel="canonical"' in body, f"missing canonical link: {relative}"
+    assert "<title>" in body, f"missing title element: {relative}"
+    assert "assets/og-image.png" not in body.replace(OG_IMAGE_URL, ""), (
+        f"social preview image must never be referenced by a relative path: {relative}"
+    )
 
 workflow = (ROOT / ".github" / "workflows" / "pages.yml").read_text(encoding="utf-8")
 for workflow_contract in (

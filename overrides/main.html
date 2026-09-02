@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{#-
+  社群預覽卡片（Open Graph / Twitter）。
+  只覆寫 extrahead，保留 Material 原本產生的 title、description 與 canonical。
+  圖片網址一律由 config.site_url 組成絕對路徑，巢狀頁面（例如 /en/family-plan/）
+  也會指向同一張 https://tw-us.cc/assets/og-image.png。
+-#}
+{% block extrahead %}
+  {%- set og_site = (config.site_url or "") | string -%}
+  {%- set og_image = og_site.rstrip("/") ~ "/assets/og-image.png" -%}
+  {%- set og_url = page.canonical_url if page and page.canonical_url else og_site -%}
+  {%- if page and page.meta and page.meta.title -%}
+    {%- set og_title = page.meta.title ~ " - " ~ config.site_name -%}
+  {%- elif page and page.title and not page.is_homepage -%}
+    {%- set og_title = page.title | striptags ~ " - " ~ config.site_name -%}
+  {%- else -%}
+    {%- set og_title = config.site_name -%}
+  {%- endif -%}
+  {%- if page and page.meta and page.meta.description -%}
+    {%- set og_description = page.meta.description -%}
+  {%- else -%}
+    {%- set og_description = config.site_description -%}
+  {%- endif -%}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:title" content="{{ og_title }}">
+  {% if og_description %}
+    <meta property="og:description" content="{{ og_description }}">
+  {% endif %}
+  {% if og_url %}
+    <meta property="og:url" content="{{ og_url }}">
+  {% endif %}
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:image:secure_url" content="{{ og_image }}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1731">
+  <meta property="og:image:height" content="909">
+  <meta property="og:image:alt" content="台美緊急連線 TW–US Crisis Connect 的品牌標誌與中英文字標 — TW–US Crisis Connect brand mark and bilingual wordmark">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ og_title }}">
+  {% if og_description %}
+    <meta name="twitter:description" content="{{ og_description }}">
+  {% endif %}
+  <meta name="twitter:image" content="{{ og_image }}">
+  <meta name="twitter:image:alt" content="台美緊急連線 TW–US Crisis Connect 的品牌標誌與中英文字標 — TW–US Crisis Connect brand mark and bilingual wordmark">
+{% endblock %}
